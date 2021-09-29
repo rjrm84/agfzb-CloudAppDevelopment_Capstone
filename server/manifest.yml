@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: djangoapp-rjrm84
     routes:
-      - route: $HOST.$DOMAIN
+      - route: djangoapp-rjrm84.us-south.cf.appdomain.cloud 
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: djangoapp-nginx-rjrm84
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: djangoapp-rjrm84.us-south.cf.appdomain.cloud/static
     memory: 128M
     buildpack: staticfile_buildpack
